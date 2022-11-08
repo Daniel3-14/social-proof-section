@@ -1,0 +1,220 @@
+:root {
+    --dark-purp: #511f50;
+}
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Quicksand;
+}
+
+body {
+    width: 100vw;
+}
+
+.bg-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+main {
+    width: 80%;
+    min-width: 760px;
+    max-width: 1020px;
+    margin: 7rem auto;
+}
+
+.upper-container {
+    display: flex;
+    width: 100%;
+}
+
+.upper-left {
+    width: 50%;
+}
+
+.upper-left h1 {
+    font-weight: 1000;
+    font-size: 2.7rem;
+    line-height: 100%;
+    margin-right: 20%;
+    color: var(--dark-purp);
+}
+
+.upper-left p {
+    padding-top: 20px;
+    font-weight: 500;
+    line-height: 1.6rem;
+    margin-right: 20%;
+}
+
+.upper-right {
+    width: 50%;
+}
+
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 465px;
+    margin: 25px 0 0 auto;
+}
+
+.rating {
+    display: flex;
+    gap: 30px;
+    width: 385px;
+    background-color: #f7f2f8;
+    border-radius: 8px;
+    padding: 18px 20px 18px 25px;
+}
+
+.r1 {
+    margin-right: 0 auto 0 0;
+}
+
+.r2 {
+    margin: 0 auto;
+}
+
+.r3 {
+    margin: 0 0 0 auto;
+}
+
+.stars {
+    width: 85px;
+    height: 16px;
+    background-image: url(./images/icon-star.svg);
+}
+
+.rating-text {
+    color: var(--dark-purp);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.lower-container {
+    margin-top: 65px;
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
+
+.card {
+    background-color: var(--dark-purp);
+    border-radius: 10px;
+}
+
+.c2 {
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+.c3 {
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+
+.person {
+    border-radius: 50%;
+    width: 45px;
+}
+
+.card-head {
+    display: flex;
+    gap: 20px;
+    padding: 30px 0 8px 25px;
+}
+
+.name-buyer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+}
+
+.name,
+.buyer,
+.testimonial {
+    font-size: 0.9rem;
+}
+
+.name {
+    color: white;
+    font-weight: bold;
+
+}
+
+.buyer {
+    color: #d279b3;
+    font-weight: 500;
+}
+
+.testimonial {
+    color: white;
+    line-height: 1.4rem;
+    padding: 8px 25px 30px 25px;
+}
+
+@media only screen and (max-width: 760px) {
+    main {
+        min-width: 310px;
+        max-width: 760px;
+        margin: 4rem auto;
+    }
+    
+    .upper-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .upper-left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px
+    }
+
+    .upper-left h1,
+    .upper-left p {
+        margin: 0 auto;
+    }
+
+    .upper-right {
+        width: 100%;
+    }
+
+    .ratings-container, .r1, .r2, .r3 {
+        margin: 0 auto;
+    }
+
+    .rating {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        max-width: 310px;
+    }
+
+    .lower-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 310px;
+    }
+
+    .c2, .c3 {
+        margin: 0;
+    }
+}
